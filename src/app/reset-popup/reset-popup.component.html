@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Congratulations!</h2>
+<mat-dialog-content class="mat-typography">
+    <div [ngSwitch]="data.win">
+        <ng-template [ngSwitchCase]= "0"> <h1> It's a tie. </h1></ng-template>
+        <ng-template [ngSwitchCase]= "1"> <h1> Player {{data.win}} wins! </h1> </ng-template>
+        <ng-template [ngSwitchCase]= "2"> <h1> Player {{data.win}} wins! </h1> </ng-template>
+        <ng-template ngSwitchDefault> </ng-template>
+        </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>Shuffle and Restart</button>
+</mat-dialog-actions>

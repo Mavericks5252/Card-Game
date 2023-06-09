@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default">
+     <div class="container-fluid">
+          <a class="navbar-brand">
+               <a href ="#" class="navbar-brand">Card Game</a>
+                    <a [ngStyle]="{'color':turn === 1 ? 'black' : 'grey'}">
+                         Player 1: {{player1Count}}
+                    </a>
+                    <a [ngStyle]="{'color':turn === 2 ? 'black' : 'grey'}">
+                         Player 2: {{player2Count}}
+                    </a>
+          </a>
+     </div>
+</nav>
